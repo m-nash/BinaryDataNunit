@@ -9,3 +9,5 @@ The only difference is that the top test uses a test case source which contains 
 
 When we upgraded from 1.0.2 to 6.0.0 in [this PR](https://github.com/Azure/azure-sdk-for-net/commit/448d80d80ad0f3df69b96df080da6cf8b537e9d2#diff-93a28d9569550c68624a8ad2209a6fae1d4f88237e4b5414eed2ecac4ef8c98fR92) is when these tests started to fail.
 There is potentially an issue both in System.Memory.Data as well as NUnit3TestAdapter which silently ignores some failure and should be calling the test out as broken.
+
+8.0.1 works fine so whatever is potentially broken in 6.0.0 has been fixed if we upgraded but still concerning that this silently fails with no indication at all.
